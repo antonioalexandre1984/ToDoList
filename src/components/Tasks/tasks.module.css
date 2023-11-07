@@ -1,0 +1,127 @@
+.tasks{
+    width: 100%;
+    max-width: 46rem;
+    margin: 0 auto;
+    margin-top: 5.625rem;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.header div{
+    display:flex;
+    align-items:center;
+    gap:0.8rem;
+}
+
+.header p{
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: var(--blue);
+}
+
+.header p.textPurple{
+    color: var(--purple);
+}
+
+.header span{
+    background: var(--gray-400);
+    color: var(--gray-200);
+    padding: 3px 9px;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.taskList{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.taskItem{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 46rem;
+    height:3.375rem;
+    padding: 0 1rem;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px;
+    margin: 0.5rem 0;
+    transition: all 0.2s ease-in-out;
+    background: var(--var-500);
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    color: var(--gray-100);
+}
+
+.empty{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align:center;
+    margin-top: 4rem;
+    width:100%;
+    flex-direction: column;
+    gap: 1rem;
+    color: var(--gray-300);
+    text-align: center;
+}
+
+.empty svg{
+    opacity: 0.5;
+    width: 100%;
+    max-width: 20rem;
+}
+
+.empty p{
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .tasks {
+    margin-top: 2rem; /* Reduza a margem superior para se ajustar a telas menores */
+    padding: 0.875rem;
+  }
+
+  .header div {
+    display:flex;
+    align-items: center; /* Alinhe os elementos à esquerda */
+    gap: 0.5rem; /* Reduza o espaçamento entre os elementos */
+  }
+
+  .header span {
+    margin-top: 0.25rem; /* Adicione um pequeno espaçamento superior */
+  }
+
+  .taskList {
+    display: flex;
+    gap: 0.5rem; /* Reduza o espaçamento entre as tarefas */
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .taskItem {
+    padding: 0.5rem 1rem; /* Aumente o preenchimento das tarefas para melhor legibilidade */
+    font-size: 0.9rem; /* Reduza o tamanho da fonte */
+  }
+
+  .empty {
+    margin-top: 2rem; /* Reduza a margem superior na seção vazia */
+  }
+
+  .empty svg {
+    max-width: 10rem; /* Reduza o tamanho do ícone */
+  }
+
+  .empty p {
+    font-size: 1rem; /* Reduza o tamanho da fonte na seção vazia */
+  }
+}
+
